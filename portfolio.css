@@ -1,0 +1,120 @@
+.h1 {
+    color : red;
+}
+#header {
+    height: 12vh;
+    background:#eb4888;
+}
+#iconn 
+{
+    color : white;
+    font-size: 1.8em;
+    margin: 10px 10px;
+}
+#logo  {
+    margin-top: 5px;
+}
+#github > i:hover  {
+    position: relative;
+    z-index: 5;
+    color : #333;
+    /* transform: scale(1.5);
+    transition: 1.5s ease-in-out; */
+}
+#linkedin > i:hover {
+    color :#00acee;
+    color : #0e76a8;
+    /* transform: scale(1.5);
+    transition: 1.5s ease-in-out; */
+}
+#twitter > i:hover {
+    color :#00acee;
+    /* transform: scale(1.5);
+    transition: 1.5s ease-in-out; */
+}
+#project-d {
+    color : #eb4888;
+    text-decoration: underline;
+    margin: 20px 5em;
+}
+#para-1 {
+    color : grey;
+    opacity: .7;
+    margin : 10px 200px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+.grid {
+
+    margin : 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1px 2px;
+
+}
+.grid > article:hover {
+    transition: transform .1s ease-in-out;
+    /* transform: translateY(3px); */
+}
+.grid > article img {
+    width: 100%;
+    border-radius: 3px;
+}
+.text {
+    padding: 0 20px 20px;
+}
+.text > h3 {
+    margin: 10px;
+    text-transform: uppercase;
+}
+#link {
+    background-image: linear-gradient(to right, #f030a7, #f03061, #f03061);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+}
+#link:hover {
+    background-image: linear-gradient(to left, #f030a7, #f03061, #f03061);
+}
+
+@media (max-width : 768px){
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width : 500px)
+{
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid > article {
+        text-align: center;
+    }
+    #para-1 {
+        font-size: 17px;
+        margin : 10px 20px;
+    }
+}
+::selection {
+    background:#eb4888;
+    color: white;
+}
+.footer {
+    color: white;
+    height: 12vh;
+    background:#eb4888;
+}
